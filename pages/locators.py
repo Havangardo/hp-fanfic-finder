@@ -20,6 +20,7 @@ class PopularPageLocators:
     CLOSE_ICON = (By.CSS_SELECTOR, ".ic_cancel-circle")
     CLOSE_BUTTON = (By.CSS_SELECTOR, "button.close")
 
+    RATING_NUMBER = (By.CSS_SELECTOR, ".rating-nr") #.text
     NAME = (By.XPATH, ".//h3/a") #.text
     LINK = (By.XPATH, ".//h3/a") #.get_attribute("href")
     LIKES = (By.XPATH, ".//span[contains(@class,'badge-like')]//span[@class='badge-text']") #.text
