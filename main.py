@@ -25,10 +25,14 @@ def main():
 def load_known_links():
     """Load known links from the file"""
     known_links = set()
-    with open(KNOWN_LINKS_FILE_PATH, "r") as f:
-        for link in f.readlines():
-            link = link.strip()
-            known_links.add(link)
+    try:
+        with open(KNOWN_LINKS_FILE_PATH, "r") as f:
+            for link in f.readlines():
+                link = link.strip()
+                known_links.add(link)
+    except OSError:
+        # Ignore if file doesn't exist
+        pass
     return known_links
 
 
