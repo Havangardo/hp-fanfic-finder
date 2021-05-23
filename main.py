@@ -3,6 +3,7 @@ import typing
 from selenium.webdriver.remote.webelement import WebElement
 
 from browser import remote_browser
+from env import KNOWN_LINKS_FILE_PATH
 from pages.login_page import LoginPage
 from pages.popular_page import PopularPage
 from pages.locators import PopularPageLocators
@@ -10,8 +11,6 @@ from telegram_bot import send_message_to_telegram
 
 LOGIN_LINK = "https://ficbook.net/login"
 POPULAR_LINK = "https://ficbook.net/fanfiction/books/harri_potter/popular"
-
-KNOWN_LINKS_FILE_PATH = "./fanfic_links.txt"
 
 
 def main():
