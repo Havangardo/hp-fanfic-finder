@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 class LoginPageLocators:
     LOGIN_FIELD = (By.XPATH, '//div[@class="col-sm-11"]/input[@name="login"]')
     PASSWORD_FIELD = (By.CSS_SELECTOR, "#login-password")
-    SUBMIT_BUTTON = (By.CSS_SELECTOR, "button.btn")
+    SUBMIT_BUTTON = (By.CSS_SELECTOR, "button.btn-block")
 
 
 class PopularPageLocators:
